@@ -8,3 +8,6 @@ The treated volcanoes are:
 - San Cristóbal Volcano
 - Monte Mayon
 - Etna
+
+Site Template credits:
+https://templated.co/industrious 
