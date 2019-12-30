@@ -7,11 +7,11 @@
 <html>
 <head>
     <title>Volcanoes 2 threejs</title>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
-    <meta name="description" content=""/>
-    <meta name="keywords" content=""/>
-    <link rel="stylesheet" href="assets/css/main.css"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="assets/css/main.css" />
 </head>
 <body class="is-preload">
 
@@ -34,35 +34,71 @@
         <li><a href="info.html">Info</a></li>
     </ul>
 </nav>
+
 <!-- Banner -->
 <section id="banner">
     <div class="inner">
-        <h1>Monte Mayon</h1>
-        <p>Located in Philippines</p>
+        <h1>Volcanoes 2 threejs</h1>
+        <p>This is a simple website that show volcanoes 3D plot created using Qgis and Qgis2threejs library.<br />
+            created by <a href="info.html">MordorTeam</a>.<br />
+            <a href="https://github.com/ZappaBoy/Volcanoes2threejs">Link to project.</a></p>
     </div>
     <video autoplay loop muted playsinline src="images/banner.mp4"></video>
 </section>
 
-<!-- Highlights -->
+<!-- Testimonials -->
 <section class="wrapper">
     <div class="inner">
-        <h2>About it</h2>
-        <p>Lorem ipsum</p>
-    </div>
-</section>
-
-<!-- CTA -->
-<section id="cta" class="wrapper">
-    <div class="inner">
-        <iframe class="vulcano-draw" src="assets/3D/10-03-2011/mayon.html"></iframe>
-
-        <div class="time-slider-container">
-            <input type="range" min="1" max="3" class="time-slider">
-            <p class="time-text"></p>
+        <header class="special">
+            <h2>This is the MordorTeam</h2>
+            <p>We are a team of three students of UniMol - Università degli Studi del Molise, Italy.<br />
+                and this is a project of territorial computer science supervised by Prof. Paolo Di Martino </p>
+        </header>
+        <div class="testimonials">
+            <section>
+                <div class="content">
+                    <blockquote>
+                        <p>We</p>
+                    </blockquote>
+                    <div class="author">
+                        <div class="image">
+                            <img src="images/pic01.jpg" alt="" />
+                        </div>
+                        <p class="credit">- <strong>Albanese Daniele</strong> <span>DJ-D - MordorTeam Inc.</span></p>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="content">
+                    <blockquote>
+                        <p>are</p>
+                    </blockquote>
+                    <div class="author">
+                        <div class="image">
+                            <img src="images/pic03.jpg" alt="" />
+                        </div>
+                        <p class="credit">- <strong>Russodivito Marco</strong> <span>RedHitMark - MordorTeam Inc.</span></p>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="content">
+                    <blockquote>
+                        <p>MordorTeam.</p>
+                    </blockquote>
+                    <div class="author">
+                        <div class="image">
+                            <img src="images/pic02.jpg" alt="" />
+                        </div>
+                        <p class="credit">- <strong>Zappone Federico</strong> <span>ZappaBoy - MordorTeam Inc.</span></p>
+                    </div>
+                </div>
+            </section>
         </div>
     </div>
 </section>
 
+<!-- Footer -->
 <footer id="footer">
     <div class="inner">
         <div class="content">
@@ -101,36 +137,6 @@
 <script src="assets/js/breakpoints.min.js"></script>
 <script src="assets/js/util.js"></script>
 <script src="assets/js/main.js"></script>
-<script>
-    $(document).ready(function() {
-        $('.time-slider').val(1);
-        $('.time-text').html("23 gennaio 2011");
 
-
-
-        $('.time-slider').change( function () {
-            let index = $(this).val();
-            switch(index) {
-                case '1':
-                    console.log(1);
-                    $('.vulcano-draw').attr('src', 'assets/3D/23-01-2011/mayon.html');
-                    $('.time-text').html("23 gennaio 2011");
-                    break;
-
-                case '2':
-                    console.log(2);
-                    $('.vulcano-draw').attr('src', 'assets/3D/10-03-2011/mayon.html');
-                    $('.time-text').html("10 marzo 2011");
-                    break;
-
-                case '3':
-                    console.log(3);
-                    $('.vulcano-draw').attr('src', 'assets/3D/10-03-2011/mayon.html');
-                    $('.time-text').html("10 marzo 2011");
-                    break;
-            }
-        });
-    });
-</script>
 </body>
 </html>
