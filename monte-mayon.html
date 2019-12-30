@@ -46,7 +46,15 @@
 <section class="wrapper">
     <div class="inner">
         <h2>About it</h2>
-        <p>Lorem ipsum</p>
+        <p>Mayon is a classic stratovolcano with a small central summit crater. The cone is considered the world's most
+            perfectly formed volcano for its symmetry, which was formed through layers of lava flows and pyroclastic
+            surges from past eruptions and erosion. </p>
+        <p> The upper slopes of the basaltic-andesitic stratovolcano are steep, averaging 35–40 degrees. Like other
+            volcanoes around the Pacific Ocean, Mayon is a part of the Pacific Ring of Fire. It is on the southeast side
+            of Luzon, close to the Philippine Trench, which is the convergent boundary where the Philippine Sea Plate
+            sinks beneath the Philippine Mobile Belt. When an oceanic plate subducts, it releases water into the
+            overlying mantle. The water lowers the melting point of the mantle and triggers melting that generates
+            magma. The magma rises and erupts at the surface at a volcano like Mayon.</p>
     </div>
 </section>
 
@@ -67,7 +75,11 @@
         <div class="content">
             <section>
                 <h3>Accumsan montes viverra</h3>
-                <p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing. Lorem ipsum dolor vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing sed feugiat eu faucibus. Integer ac sed amet praesent. Nunc lacinia ante nunc ac gravida.</p>
+                <p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non
+                    faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan
+                    varius montes viverra nibh in adipiscing. Lorem ipsum dolor vestibulum ante ipsum primis in faucibus
+                    vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing sed feugiat eu faucibus.
+                    Integer ac sed amet praesent. Nunc lacinia ante nunc ac gravida.</p>
             </section>
             <section>
                 <h4>Sem turpis amet semper</h4>
@@ -89,7 +101,8 @@
             </section>
         </div>
         <div class="copyright">
-            &copy; Untitled. Photos <a href="https://unsplash.co">Unsplash</a>, Video <a href="https://coverr.co">Coverr</a>.
+            &copy; Untitled. Photos <a href="https://unsplash.co">Unsplash</a>, Video <a
+                href="https://coverr.co">Coverr</a>.
         </div>
     </div>
 </footer>
@@ -101,15 +114,14 @@
 <script src="assets/js/util.js"></script>
 <script src="assets/js/main.js"></script>
 <script>
-    $(document).ready(function() {
+    $(document).ready(function () {
         $('.time-slider').val(1);
         $('.time-text').html("23 gennaio 2011");
 
 
-
-        $('.time-slider').change( function () {
+        $('.time-slider').change(function () {
             let index = $(this).val();
-            switch(index) {
+            switch (index) {
                 case '1':
                     console.log(1);
                     $('.vulcano-draw').attr('src', 'assets/3D/23-01-2011/mayon.html');

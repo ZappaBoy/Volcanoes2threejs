@@ -46,7 +46,23 @@
 <section class="wrapper">
     <div class="inner">
         <h2>About it</h2>
-        <p>Lorem ipsum</p>
+        <p>Volcanic activity at Nevado del Ruiz began about two million years ago, since the Early Pleistocene or
+            Late Pliocene, with three major eruptive periods. The current volcanic cone formed during the present
+            eruptive period, which began 150 thousand years ago.</p>
+
+        <p>The volcano usually generates Vulcanian to Plinian eruptions, which produce swift-moving currents of hot
+            gas and rock called pyroclastic flows. These eruptions often cause massive lahars (mud and debris flows),
+            which pose a threat to human life and the environment. The impact of such an eruption is increased as the
+            hot gas and lava melt the mountain's snowcap, adding large quantities of water to the flow.
+            On November 13, 1985, a small eruption produced an enormous lahar that buried and destroyed the town of
+            Armero in Tolima, causing an estimated 25,000 deaths. This event later became known as the Armero
+            tragedy—the deadliest lahar in recorded history. Similar but less deadly incidents occurred in 1595 and
+            1845, consisting of a small explosive eruption followed by a large lahar.</p>
+
+        <p>The volcano is part of Los Nevados National Natural Park, which also contains several other volcanoes. The
+            summit of Nevado del Ruiz is covered by large glaciers. The volcano continues to pose a threat to the nearby
+            towns and villages, and it is estimated that up to 500,000 people could be at risk from lahars from future
+            eruptions.</p>
     </div>
 </section>
 
@@ -67,7 +83,11 @@
         <div class="content">
             <section>
                 <h3>Accumsan montes viverra</h3>
-                <p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing. Lorem ipsum dolor vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing sed feugiat eu faucibus. Integer ac sed amet praesent. Nunc lacinia ante nunc ac gravida.</p>
+                <p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non
+                    faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan
+                    varius montes viverra nibh in adipiscing. Lorem ipsum dolor vestibulum ante ipsum primis in faucibus
+                    vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing sed feugiat eu faucibus.
+                    Integer ac sed amet praesent. Nunc lacinia ante nunc ac gravida.</p>
             </section>
             <section>
                 <h4>Sem turpis amet semper</h4>
@@ -89,7 +109,8 @@
             </section>
         </div>
         <div class="copyright">
-            &copy; Untitled. Photos <a href="https://unsplash.co">Unsplash</a>, Video <a href="https://coverr.co">Coverr</a>.
+            &copy; Untitled. Photos <a href="https://unsplash.co">Unsplash</a>, Video <a
+                href="https://coverr.co">Coverr</a>.
         </div>
     </div>
 </footer>
@@ -101,15 +122,14 @@
 <script src="assets/js/util.js"></script>
 <script src="assets/js/main.js"></script>
 <script>
-    $(document).ready(function() {
+    $(document).ready(function () {
         $('.time-slider').val(1);
         $('.time-text').html("23 gennaio 2011");
 
 
-
-        $('.time-slider').change( function () {
+        $('.time-slider').change(function () {
             let index = $(this).val();
-            switch(index) {
+            switch (index) {
                 case '1':
                     console.log(1);
                     $('.vulcano-draw').attr('src', 'assets/3D/23-01-2011/mayon.html');

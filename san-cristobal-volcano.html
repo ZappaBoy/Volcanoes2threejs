@@ -46,7 +46,17 @@
 <section class="wrapper">
     <div class="inner">
         <h2>About it</h2>
-        <p>Lorem ipsum</p>
+        <p>San Cristóbal is part of a 5-member volcanic complex that bears the same name. Chonco lies 4 km to the west,
+            and Moyotepe 4 km to the north east. Joined to the volcano's eastern flank is Volcán Casitas, which buried
+            a village with a catastrophic landslide in 1998. The scars from said landslide are still visible today.
+            Finally, La Pelona is located on the eastern end of the complex</p>
+
+        <p>San Cristóbal is the youngest volcano in its complex. It is a nearly symmetrical stratovolcano, rising in
+            a distinctive cone shape. The SW slope is the longest, and the crater rim on that side rises 140 m above
+            the NE end due to prevailing trade winds that distribute tephra to the SW.</p>
+
+        <p>The crater is 500 × 600 m in size. While the volcano was at one point covered in tropical forests, the
+            large quantities of gas and smoke that it emits constantly have killed off much of the vegetation.</p>
     </div>
 </section>
 
@@ -67,7 +77,11 @@
         <div class="content">
             <section>
                 <h3>Accumsan montes viverra</h3>
-                <p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing. Lorem ipsum dolor vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing sed feugiat eu faucibus. Integer ac sed amet praesent. Nunc lacinia ante nunc ac gravida.</p>
+                <p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non
+                    faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan
+                    varius montes viverra nibh in adipiscing. Lorem ipsum dolor vestibulum ante ipsum primis in faucibus
+                    vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing sed feugiat eu faucibus.
+                    Integer ac sed amet praesent. Nunc lacinia ante nunc ac gravida.</p>
             </section>
             <section>
                 <h4>Sem turpis amet semper</h4>
@@ -89,7 +103,8 @@
             </section>
         </div>
         <div class="copyright">
-            &copy; Untitled. Photos <a href="https://unsplash.co">Unsplash</a>, Video <a href="https://coverr.co">Coverr</a>.
+            &copy; Untitled. Photos <a href="https://unsplash.co">Unsplash</a>, Video <a
+                href="https://coverr.co">Coverr</a>.
         </div>
     </div>
 </footer>
@@ -101,15 +116,14 @@
 <script src="assets/js/util.js"></script>
 <script src="assets/js/main.js"></script>
 <script>
-    $(document).ready(function() {
+    $(document).ready(function () {
         $('.time-slider').val(1);
         $('.time-text').html("23 gennaio 2011");
 
 
-
-        $('.time-slider').change( function () {
+        $('.time-slider').change(function () {
             let index = $(this).val();
-            switch(index) {
+            switch (index) {
                 case '1':
                     console.log(1);
                     $('.vulcano-draw').attr('src', 'assets/3D/23-01-2011/mayon.html');
