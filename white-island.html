@@ -35,85 +35,48 @@
         <li><a href="info.html">Info</a></li>
     </ul>
 </nav>
-
 <!-- Banner -->
-<section id="banner" style="background-image: url('images/unimol.jpg');">
+<section id="banner" style="background-image: url('images/white-island.jpg');">
     <div class="inner">
-        <h1>Volcanoes 2 threejs</h1>
-        <p>Created by <a href="info.html">MordorTeam</a> to show how volcanoes can impact on surrounding areas.<br/>
-            <a href="https://github.com/ZappaBoy/Volcanoes2threejs">Link to project.</a></p>
+        <h1>White Island</h1>
+        <p>Located in New Zealand</p>
     </div>
 </section>
 
-<!-- Testimonials -->
+<!-- Highlights -->
 <section class="wrapper">
     <div class="inner">
-        <header class="special">
-            <h2>This is the MordorTeam</h2>
-            <p>We are a team of three students of UniMol - Università degli Studi del Molise, Italy.<br/>
-                and this is a project of territorial computer science supervised by Prof. Paolo Di Martino </p>
-        </header>
-        <div class="testimonials">
-            <section>
-                <div class="content">
-                    <blockquote>
-                        <p>We</p>
-                    </blockquote>
-                    <div class="author">
-                        <div class="image">
-                            <img alt="" src="images/dj-d.jpeg"/>
-                        </div>
-                        <p class="credit">- <strong>Albanese Daniele</strong> <span>DJ-D - MordorTeam Inc.</span></p>
-                    </div>
-                </div>
-            </section>
-            <section>
-                <div class="content">
-                    <blockquote>
-                        <p>are</p>
-                    </blockquote>
-                    <div class="author">
-                        <div class="image">
-                            <img alt="" src="images/redhitmark.jpg"/>
-                        </div>
-                        <p class="credit">- <strong>Russodivito Marco</strong> <span>RedHitMark - MordorTeam Inc.</span>
-                        </p>
-                    </div>
-                </div>
-            </section>
-            <section>
-                <div class="content">
-                    <blockquote>
-                        <p>MordorTeam.</p>
-                    </blockquote>
-                    <div class="author">
-                        <div class="image">
-                            <img alt="" src="images/zappaboy.jpeg"/>
-                        </div>
-                        <p class="credit">- <strong>Zappone Federico</strong> <span>ZappaBoy - MordorTeam Inc.</span>
-                        </p>
-                    </div>
-                </div>
-            </section>
-        </div>
+        <h2>About it</h2>
+        <p>Whakaari/White Island lies in northern end of the Taupo Volcanic Zone. The Taupo Volcanic Zone forms the
+            southernmost segment of the 2,800 km.
+            For the past few thousand years, Whakaari/White Island has been the location for an open, highly reactive
+            hydrothermal system. This hydrothermal system expresses itself as hot springs and mud pools, fumaroles,
+            and acid streams and lakes. The present day centre for volcanic activity and outgassing is a large crater
+            lake of boiling acidic waters located in the western subcrater.</p>
+
+        <p> The crater lake of boiling acidic water, which occupies the western subcrater, appears to vary in volume
+            due to changing meteorological conditions and fluctuating levels of hydrothermal activity. In 2012 the
+            island showed signs of increased activity with lake and gas levels rising from inside the crater and a
+            minor eruption occurred, sending ash into the air. More eruptions have followed since. Ongoing volcanic
+            activity and tremors on 25 January 2013 suggested another eruption was imminent. A
+            small eruption occurred in 2013, lasting for ten minutes and producing mostly steam.</p>
+
+        <p><i>The island is typically on an alert level rating of 1 or 2 on a scale of 0 to 5; as "Level 2 is the
+            highest
+            alert level before an eruption takes place.</i></p>
+
     </div>
 </section>
 
 <!-- CTA -->
 <section class="wrapper" id="cta">
     <div class="inner">
-        <h2>How did we do it?</h2>
-        <p>This site was created using <a href="https://templated.co/industrious">Industrious Template</a> created by
-            <a href="https://templated.co/">Templated.co</a>.</p>
+        <iframe class="vulcano-draw" src="assets/3D/10-03-2011/mayon.html"></iframe>
 
-        <p>3D plot are created using <a href="https://qgis.org/">QGIS</a> and <a
-                href="https://plugins.qgis.org/plugins/Qgis2threejs/">Qgis2threejs</a> library.<br/>
-            <a href="https://qgis.org/">QGIS</a> is a professional GIS application that is built on top of and proud
-            to be itself Free and Open Source Software (FOSS).<br/>
-            <a href="https://qgis.org/">QGIS</a> use external library to extend its functionality like <a
-                    href="https://plugins.qgis.org/plugins/Qgis2threejs/">Qgis2threejs</a>.<br/>
-            <a href="https://plugins.qgis.org/plugins/Qgis2threejs/">Qgis2threejs</a> is a library for 3D visualization
-            powered by WebGL technology and three.js JavaScript library.</p>
+        <div class="time-slider-container">
+            <input class="time-slider" max="3" min="1" type="range">
+            <p class="time-text"></p>
+        </div>
     </div>
 </section>
 
@@ -167,6 +130,35 @@
 <script src="assets/js/breakpoints.min.js"></script>
 <script src="assets/js/util.js"></script>
 <script src="assets/js/main.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.time-slider').val(1);
+        $('.time-text').html("23 gennaio 2011");
 
+
+        $('.time-slider').change(function () {
+            let index = $(this).val();
+            switch (index) {
+                case '1':
+                    console.log(1);
+                    $('.vulcano-draw').attr('src', 'assets/3D/23-01-2011/mayon.html');
+                    $('.time-text').html("23 gennaio 2011");
+                    break;
+
+                case '2':
+                    console.log(2);
+                    $('.vulcano-draw').attr('src', 'assets/3D/10-03-2011/mayon.html');
+                    $('.time-text').html("10 marzo 2011");
+                    break;
+
+                case '3':
+                    console.log(3);
+                    $('.vulcano-draw').attr('src', 'assets/3D/10-03-2011/mayon.html');
+                    $('.time-text').html("10 marzo 2011");
+                    break;
+            }
+        });
+    });
+</script>
 </body>
 </html>
