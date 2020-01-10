@@ -8,10 +8,10 @@
 <head>
     <title>Volcanoes 2 threejs</title>
     <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
-    <meta name="description" content=""/>
-    <meta name="keywords" content=""/>
-    <link rel="stylesheet" href="assets/css/main.css"/>
+    <meta content="width=device-width, initial-scale=1, user-scalable=no" name="viewport"/>
+    <meta content="" name="description"/>
+    <meta content="" name="keywords"/>
+    <link href="assets/css/main.css" rel="stylesheet"/>
 </head>
 <body class="is-preload">
 
@@ -37,10 +37,10 @@
     </ul>
 </nav>
 <!-- Banner -->
-<section id="banner" style="background-image: url('images/nevado-del-ruiz.jpg');">
+<section id="banner" style="background-image: url('images/volcan-de-fuego.jpg');">
     <div class="inner">
-        <h1>Nevado del Ruiz</h1>
-        <p>Located in Colombia</p>
+        <h1>Volcán de Fuego</h1>
+        <p>Located in Guatemala</p>
     </div>
 </section>
 
@@ -48,35 +48,28 @@
 <section class="wrapper">
     <div class="inner">
         <h2>About it</h2>
-        <p>Volcanic activity at Nevado del Ruiz began about two million years ago, since the Early Pleistocene or
-            Late Pliocene, with three major eruptive periods. The current volcanic cone formed during the present
-            eruptive period, which began 150 thousand years ago.</p>
+        <p>Volcán de Fuego or Chi Q'aq' (Kaqchikel for "where the fire is") is an active stratovolcano in Guatemala,
+            on the borders of Chimaltenango, Escuintla and Sacatepéquez departments.</p>
 
-        <p>The volcano usually generates Vulcanian to Plinian eruptions, which produce swift-moving currents of hot
-            gas and rock called pyroclastic flows. These eruptions often cause massive lahars (mud and debris flows),
-            which pose a threat to human life and the environment. The impact of such an eruption is increased as the
-            hot gas and lava melt the mountain's snowcap, adding large quantities of water to the flow.
-            On November 13, 1985, a small eruption produced an enormous lahar that buried and destroyed the town of
-            Armero in Tolima, causing an estimated 25,000 deaths. This event later became known as the Armero
-            tragedy—the deadliest lahar in recorded history. Similar but less deadly incidents occurred in 1595 and
-            1845, consisting of a small explosive eruption followed by a large lahar.</p>
+        <p>It sits about 16 kilometres west
+            of Antigua, one of Guatemala's most famous cities and a tourist destination. It has erupted frequently
+            since the Spanish conquest, most recently in June and November 2018.</p>
 
-        <p>The volcano is part of Los Nevados National Natural Park, which also contains several other volcanoes. The
-            summit of Nevado del Ruiz is covered by large glaciers. The volcano continues to pose a threat to the nearby
-            towns and villages, and it is estimated that up to 500,000 people could be at risk from lahars from future
-            eruptions.</p>
+        <p>Fuego is famous for being almost constantly active at a low level. Small gas and ash eruptions occur every
+            15 to 20 minutes, but larger eruptions are rare. Andesite and basalt lava types dominate, and recent
+            eruptions have tended to be more mafic than older ones.</p>
     </div>
 </section>
 
 <!-- CTA -->
-<section id="cta" class="wrapper">
+<section class="wrapper" id="cta">
     <div class="inner">
-        <iframe class="vulcano-draw" src="assets/3D/Nevado%20Del%20Ruiz/15%20marzo%202011/index.html"></iframe>
-        <!--
+        <iframe class="vulcano-draw" src="assets/3D/White%20Island/13%20ottobre%202008/index.html"></iframe>
+
         <div class="time-slider-container">
-            <input type="range" min="1" max="1" class="time-slider">
+            <input class="time-slider" max="2" min="1" type="range">
             <p class="time-text"></p>
-        </div> -->
+        </div>
     </div>
 </section>
 
@@ -136,7 +129,7 @@
 <script>
     $(document).ready(function () {
         $('.time-slider').val(1);
-        $('.time-text').html("23 gennaio 2011");
+        $('.time-text').html("<a href='assets/3D/White%20Island/13%20ottobre%202008/index.html' target='_blank'>13 ottobre 2008</a>");
 
 
         $('.time-slider').change(function () {
@@ -144,20 +137,14 @@
             switch (index) {
                 case '1':
                     console.log(1);
-                    $('.vulcano-draw').attr('src', 'assets/3D/23-01-2011/mayon.html');
-                    $('.time-text').html("23 gennaio 2011");
+                    $('.vulcano-draw').attr('src', 'assets/3D/White%20Island/13%20ottobre%202008/index.html');
+                    $('.time-text').html("<a href='assets/3D/White%20Island/13%20ottobre%202008/index.html' target='_blank'>13 ottobre 2008</a>");
                     break;
 
                 case '2':
                     console.log(2);
-                    $('.vulcano-draw').attr('src', 'assets/3D/10-03-2011/mayon.html');
-                    $('.time-text').html("10 marzo 2011");
-                    break;
-
-                case '3':
-                    console.log(3);
-                    $('.vulcano-draw').attr('src', 'assets/3D/10-03-2011/mayon.html');
-                    $('.time-text').html("10 marzo 2011");
+                    $('.vulcano-draw').attr('src', 'assets/3D/White%20Island/23%20settembre%202014/index.html');
+                    $('.time-text').html("<a href='assets/3D/White%20Island/23%20settembre%202014/index.html' target='_blank'>23 settembre 2014<a>");
                     break;
             }
         });
