@@ -1,5 +1,5 @@
 # Volcanoes2threejs
-This is a simple website that show five volcanoes 3D plot created using Qgis and Qgis2threejs library.
+This is a simple website that show six volcanoes 3D plot created using Qgis and Qgis2threejs library.
 QGIS is a professional GIS application that is built on top of and proud to be itself Free and Open Source Software (FOSS), QGIS use external library to extend its functionality like Qgis2threejs.
 Qgis2threejs is a library for 3D visualization powered by WebGL technology and three.js JavaScript library.
 
@@ -9,6 +9,7 @@ The treated volcanoes are:
 - Monte Mayon
 - Etna
 - White Island
+- Volcán de Fuego
 
 Site Template credits:
 https://templated.co/industrious 
