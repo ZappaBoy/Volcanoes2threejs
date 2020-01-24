@@ -65,11 +65,11 @@
 <!-- CTA -->
 <section id="cta" class="wrapper">
     <div class="inner">
-        <iframe class="vulcano-draw" src="assets/3D/10-03-2011/mayon.html"></iframe>
+        <iframe class="vulcano-draw" src="assets/3D/Etna/2007_2008_eruption2018/index.html"></iframe>
 
         <div class="time-slider-container">
-            <input type="range" min="1" max="3" class="time-slider">
-            <p class="time-text"></p>
+            <input id="timeline" type="range" min="1" max="9" class="time-slider">
+            <label for="timeline" class="time-text"></label>
         </div>
     </div>
 </section>
@@ -129,29 +129,52 @@
 <script src="assets/js/main.js"></script>
 <script>
     $(document).ready(function () {
+        //default value
         $('.time-slider').val(1);
-        $('.time-text').html("23 gennaio 2011");
+        $('.time-text').html("<a href='assets/3D/Etna/2007_2008_eruption2018/index.html'>DTM2 - 2007/2008<br>Texture: Eruption 2018</a>");
 
 
         $('.time-slider').change(function () {
             let index = $(this).val();
             switch (index) {
                 case '1':
-                    console.log(1);
-                    $('.vulcano-draw').attr('src', 'assets/3D/23-01-2011/mayon.html');
-                    $('.time-text').html("23 gennaio 2011");
+                    $('.vulcano-draw').attr('src', 'assets/3D/Etna/2007_2008_eruption2018/index.html');
+                    $('.time-text').html("<a href='assets/3D/Etna/2007_2008_eruption2018/index.html'>DTM2 - 2007/2008<br>Texture: Eruption 2018</a>");
                     break;
 
                 case '2':
-                    console.log(2);
-                    $('.vulcano-draw').attr('src', 'assets/3D/10-03-2011/mayon.html');
-                    $('.time-text').html("10 marzo 2011");
+                    $('.vulcano-draw').attr('src', 'assets/3D/Etna/2007_2008_no_texture/index.html');
+                    $('.time-text').html("<a href='assets/3D/Etna/2007_2008_no_texture/index.html'>DTM2 - 2007/2008</a>");
                     break;
 
                 case '3':
-                    console.log(3);
-                    $('.vulcano-draw').attr('src', 'assets/3D/10-03-2011/mayon.html');
-                    $('.time-text').html("10 marzo 2011");
+                    $('.vulcano-draw').attr('src', 'assets/3D/Etna/2007_2008_google_maps/index.html');
+                    $('.time-text').html("<a href='assets/3D/Etna/2007_2008_google_maps/index.html'>DTM2 - 2007/2008<br>Texture: Google Maps</a>");
+                    break;
+
+                case '4':
+                    $('.vulcano-draw').attr('src', 'assets/3D/Etna/2007_2008_esri/index.html');
+                    $('.time-text').html("<a href='assets/3D/Etna/2007_2008_esri/index.html'>DTM2 - 2007/2008<br>Texture: Esri</a>");
+                    break;
+
+                case '5':
+                    $('.vulcano-draw').attr('src', 'assets/3D/Etna/2007_2008_ortofoto/index.html');
+                    $('.time-text').html("<a href='assets/3D/Etna/2007_2008_ortofoto/index.html'>DTM2 - 2007/2008<br>Texture: Orthographic Photo 2012/2013</a>");
+                    break;
+
+                case '6':
+                    $('.vulcano-draw').attr('src', 'assets/3D/Etna/2009_no_texture/index.html');
+                    $('.time-text').html("<a href='assets/3D/Etna/2009_no_texture/index.html'>DTM12.5 - 4 agosto 2009</a>");
+                    break;
+
+                case '7':
+                    $('.vulcano-draw').attr('src', 'assets/3D/Etna/2014_no_texture/index.html');
+                    $('.time-text').html("<a href='assets/3D/Etna/2014_no_texture/index.html'>DTM30 - 23 settembre 2014</a>");
+                    break;
+
+                case '8':
+                    $('.vulcano-draw').attr('src', 'assets/3D/Etna/2014_eruption2018/index.html');
+                    $('.time-text').html("<a href='assets/3D/Etna/2014_eruption2018/index.html'>DTM30 - 23 settembre 2014<br>Texture: Eruption 2018</a>");
                     break;
             }
         });
