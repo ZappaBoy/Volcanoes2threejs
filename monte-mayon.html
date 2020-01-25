@@ -63,12 +63,12 @@
 <!-- CTA -->
 <section id="cta" class="wrapper">
     <div class="inner">
-        <iframe class="vulcano-draw" src="assets/3D/Monte Mayon/10-03-2011/index.html"></iframe>
-        <!--
+        <iframe class="vulcano-draw" src="assets/3D/Monte Mayon/2011_esri/index.html"></iframe>
+
         <div class="time-slider-container">
-            <input type="range" min="1" max="1" class="time-slider">
-            <p class="time-text"></p>
-        </div> -->
+            <input id="time-line" type="range" min="1" max="2" class="time-slider">
+            <label for="time-line" class="time-text"></label>
+        </div>
     </div>
 </section>
 
@@ -128,16 +128,20 @@
 <script>
     $(document).ready(function () {
         $('.time-slider').val(1);
-        $('.time-text').html("23 gennaio 2011");
+        $('.time-text').html("<a href='assets/3D/Monte Mayon/2011_esri/index.html' target='_blank'>DEM 10 Marzo 2011<br>Texture: ESRI<a>");
 
 
         $('.time-slider').change(function () {
             let index = $(this).val();
             switch (index) {
                 case '1':
-                    console.log(1);
-                    $('.vulcano-draw').attr('src', 'assets/3D/Monte Mayon/10-03-2011/index.html');
-                    $('.time-text').html("23 gennaio 2011");
+                    $('.vulcano-draw').attr('src', 'assets/3D/Monte Mayon/2011_esri/index.html');
+                    $('.time-text').html("<a href='assets/3D/Monte Mayon/2011_esri/index.html' target='_blank'>DEM 10 Marzo 2011<br>Texture: ESRI<a>");
+                    break;
+
+                case '2':
+                    $('.vulcano-draw').attr('src', 'assets/3D/Monte Mayon/2011_no_texture/index.html');
+                    $('.time-text').html("<a href='assets/3D/Monte Mayon/2011_no_texture/index.html' target='_blank'>DEM 10 Marzo 2011<a>");
                     break;
             }
         });
