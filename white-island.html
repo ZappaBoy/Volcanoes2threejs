@@ -72,11 +72,11 @@
 <!-- CTA -->
 <section class="wrapper" id="cta">
     <div class="inner">
-        <iframe class="vulcano-draw" src="assets/3D/White%20Island/13%20ottobre%202008/index.html"></iframe>
+        <iframe class="vulcano-draw" src="assets/3D/White%20Island/2008_esri/index.html"></iframe>
 
         <div class="time-slider-container">
-            <input class="time-slider" max="2" min="1" type="range">
-            <p class="time-text"></p>
+            <input id="time-line" class="time-slider" max="7" min="1" type="range">
+            <label for="time-line" class="time-text"></label>
         </div>
     </div>
 </section>
@@ -137,22 +137,45 @@
 <script>
     $(document).ready(function () {
         $('.time-slider').val(1);
-        $('.time-text').html("<a href='assets/3D/White%20Island/13%20ottobre%202008/index.html' target='_blank'>13 ottobre 2008</a>");
+        $('.time-text').html("<a href='assets/3D/White%20Island/2008_esri/index.html' target='_blank'>DEM 13 ottobre 2008<br>Texture: ESRI</a>");
 
 
         $('.time-slider').change(function () {
             let index = $(this).val();
             switch (index) {
                 case '1':
-                    console.log(1);
-                    $('.vulcano-draw').attr('src', 'assets/3D/White%20Island/13%20ottobre%202008/index.html');
-                    $('.time-text').html("<a href='assets/3D/White%20Island/13%20ottobre%202008/index.html' target='_blank'>13 ottobre 2008</a>");
+                    $('.vulcano-draw').attr('src', 'assets/3D/White%20Island/2008_esri/index.html');
+                    $('.time-text').html("<a href='assets/3D/White%20Island/2008_esri/index.html' target='_blank'>DEM 13 ottobre 2008<br>Texture: ESRI</a>");
                     break;
 
                 case '2':
-                    console.log(2);
-                    $('.vulcano-draw').attr('src', 'assets/3D/White%20Island/23%20settembre%202014/index.html');
-                    $('.time-text').html("<a href='assets/3D/White%20Island/23%20settembre%202014/index.html' target='_blank'>23 settembre 2014<a>");
+                    $('.vulcano-draw').attr('src', 'assets/3D/White%20Island/2008_no_texture/index.html');
+                    $('.time-text').html("<a href='assets/3D/White%20Island/2008_no_texture/index.html' target='_blank'>DEM 13 ottobre 2008<a>");
+                    break;
+
+                case '3':
+                    $('.vulcano-draw').attr('src', 'assets/3D/White%20Island/2008_google_maps/index.html');
+                    $('.time-text').html("<a href='assets/3D/White%20Island/2008_google_maps/index.html' target='_blank'>DEM 13 ottobre 2008<br>Texture: Google Maps<a>");
+                    break;
+
+                case '4':
+                    $('.vulcano-draw').attr('src', 'assets/3D/White%20Island/2008_orto/index.html');
+                    $('.time-text').html("<a href='assets/3D/White%20Island/2008_orto/index.html' target='_blank'>DEM 13 ottobre 2008<br>Texture: Ortographic Photo<a>");
+                    break;
+
+                case '5':
+                    $('.vulcano-draw').attr('src', 'assets/3D/White%20Island/2008_eruption/index.html');
+                    $('.time-text').html("<a href='assets/3D/White%20Island/2008_eruption/index.html' target='_blank'>DEM 13 ottobre 2008<br>Texture: Eruption<a>");
+                    break;
+
+                case '6':
+                    $('.vulcano-draw').attr('src', 'assets/3D/White%20Island/2014_no_texture/index.html');
+                    $('.time-text').html("<a href='assets/3D/White%20Island/2014_no_texture/index.html' target='_blank'>DEM 23 settembre 2014<a>");
+                    break;
+
+                case '7':
+                    $('.vulcano-draw').attr('src', 'assets/3D/White%20Island/2014_esri/index.html');
+                    $('.time-text').html("<a href='assets/3D/White%20Island/2014_esri/index.html' target='_blank'>DEM 23 settembre 2014<br>Texture: ESRI<a>");
                     break;
             }
         });
